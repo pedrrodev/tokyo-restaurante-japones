@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A melhor comida japonesa</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="IMAGENS/favicon2.ico" type="image/x-icon">
+</head>
+
+<body>
+    
+    <div class="wrapper">
+
+        <div class="boxLogo">
+            <img src="IMAGENS/logonovo.png" alt="" class="imagemLogoMenu">
+        </div>
+
+        <div class="boxMenu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="quemsomos.html" >Quem somos</a></li>
+                    <li><a href="contato.html" class="botaoColorido">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    <div class="boxImagemContato">
+        <img src="IMAGENS/reservado.jpg" alt="" class="tamanhoImagemContato">
+    </div>
+    <div class="boxFormulario">
+    <div id="conteudo_formulario">    
+        <form method="post" id="fContato" action="tokyo@tokyo.com.br">    
+            <fieldset id="usuario">
+                <legend>Identificação do Usuário</legend>
+                <label for="cNome"> Nome:</label> <br>
+                <input type="text" name="tNome" id="cNome" size="30" maxlength="30" placeholder="Digite seu nome aqui" autofocus required>
+                <p>
+                    <label for="cMail">E-mail:</label> <br>
+                    <input type="email" name="tMail" id="cMail" size="30" maxlength="30" placeholder="Ex: exemplo@mail.com" required>
+                </p>
+                <p>
+                    <label for="cdataNasc">Data de Nascimento</label> <br>
+                    <input type="date" name="tNasc" id="cNasc">
+                </p>
+                <p>
+                    <label for="cRua">Endereço:</label> <br>
+                    <input type="texto" name="tRua" id="cRua" size="30" maxlength="50" placeholder="Rua, Av, Trav, ..." required>
+                </p>
+            
+            <p>
+                <label for="cMsg">Mensagem:</label> <br>
+                <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem" required></textarea>
+            </p>
+            <div id="botoes">
+                <input type="submit" name="Enviar" class="botoes">
+            </div>
+            </fieldset>
+        </form>    
+    </div>
+    </div>
+
+        <div class="boxRedesSociais">
+            Avenida Manoel Francisco Guedes 123, São Paulo SP - (11) 99999-9999
+            <ul class="listaRedesSociais">
+                <li><a href="https://www.facebook.com.br"><img src="IMAGENS/facebook-24.png" alt="" class="imagemRedesSociais"></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank"><img src="IMAGENS/whatsapp-24.png" alt="" class="imagemRedesSociais" title="Abrir no WhatsApp"></a></li>
+                <li><a href="https://www.instagram.com.br"><img src="IMAGENS/instagram-24.png" alt="" class="imagemRedesSociais"></a></li>
+            </ul>    
+        </div>
+            
+        <div class="boxRodaPe">
+            Todos os direitos reservados - 2025 - Desenvolvido por Pedro Augusto
+        </div>
+    </div>
+
+</body>
+</html>

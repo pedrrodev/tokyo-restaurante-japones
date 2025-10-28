@@ -1,0 +1,539 @@
+
+
+.wrapper{ /* caixa principal que receberá as caixas (box) */
+    margin: auto; /* centralizar */
+    display: flex; /* para transformar em blocos (flexível) */
+    flex-direction: row; /* direção das caixas - temos também em coluna - column */
+    flex-wrap: wrap; /* quando utilizamos blocos ele ficam um do lado do outro, mesmo que tenha tamanho total da tela, então para resolver isso utilizamos  esse comando */
+    justify-content: center; /* alinhando os blocos na horizontal dentro do principal */
+    align-items: center; /* alinhando os blocos na vertical */
+    width: 90%; /* largura do principal */
+    height: auto;
+    background-color: #959697;
+    padding: 0px; /* espaço entre as caixas e o principal */
+    box-shadow: 0px 5px 15px #000000; /* deslocamento lateral/deslocamento vertical/espelhamento da sombra/cor */
+
+}
+
+.boxLogo{
+    width: 10%;
+    height: 50px;
+    background-color: #959697;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.boxMenu{
+    width: 90%;
+    height: 50px;
+    
+}
+
+.boxBannerRotativo{
+    width: 100%;
+    height: 300px;
+    background-image: url('../IMAGENS/banner1.jpg'); /* imagem inicial */
+    background-size: cover; /*ajusta o tamanho da imagem de fundo para garantir que ela cubra completamente o elemento, mesmo que isso signifique cortar partes da imagem*/
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+                
+    /*formatando o texto sobre o banner */
+    font-size: 2.5em;
+    color: rgb(255, 248, 248);  
+    padding-top: 250px; 
+    padding-right: 0px;          
+    text-align: right;        /* Centralizar texto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif          
+}
+
+.boxBannerRotativo:hover {
+    background-image: url('../IMAGENS/banner2.jpg'); /* imagem ao passar o mouse */ 
+}
+
+
+.boxCard{
+    width: 27%;
+    height: auto;
+    background-color: #343538;
+    color: white;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+
+.boxBannerEstatico{
+    width: 100%;
+    height: 300px;
+}
+
+.boxRedesSociais{   
+    width: 100%;
+    height: 60px;
+    background-color: #959697;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.boxRodaPe{
+    width: 100%;
+    height: 50px;
+    background-color: #343538;
+    color: rgb(207, 31, 31);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 0.9em;
+    /* padding-top: 1.5%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagemLogoMenu{
+    width:  4rem;
+    height: 100%;
+}
+
+.imagemBannerRotativo{
+    width: 100%;
+    height: 100%;
+}
+
+.imagemBannerEstatico{
+    width: 100%;
+    height: 100%;
+}
+
+.imagemCard{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.imagemRedesSociais{
+    width: 35px;
+    height: 35px;
+}
+
+.listaRedesSociais{
+    text-align: left;
+    list-style: none;
+	margin:0px;
+	padding:0px;
+	text-align:right;
+    li{
+        display: inline-block;
+    }
+}
+
+/* NAVEGAÇÃO */
+
+nav{
+	max-width: 100%;
+	height: 50px;
+	background-color: #343538;
+}
+
+nav ul{
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+}
+
+nav ul li{
+	display: inline-block;	/*blocos na mesma linha*/
+	margin-right:10px; /*distância entre os botoes*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+nav ul li a{
+	padding: 15px;
+	text-decoration: none; /*retirar a linha abaixo dos links normais*/
+	color: rgb(207, 31, 31);
+	display: block;
+	text-align: center;
+	background-color: #343538; /*cor do botao sem clicar. Aqui está da mesma cor do nav por isso não está aparecendo*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul li a:hover {
+	background-color: #959697; /*cor quando passar o mouse*/
+	transition: all .5s; 
+	border-radius:10px; /*arredondado*/
+}
+
+.botaoColorido{ /* quando eu estiver na página o botão ficará colorido */
+    background-color: #959697;
+    border-radius: 10px;
+    color: brown;
+}
+
+/* CARDÁPIO */
+
+.boxCardCardapio{
+    width: 20%;
+    height: 200px;
+    background-color: #343538;
+    color: white;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    border-style: groove; /* estilo da borda */
+    border-color: #343538; /* cor da borda */
+    display: flex;
+    flex-direction:row; 
+    flex-wrap: wrap; 
+    justify-content:center; /*alinhamento na horizontal*/
+    align-items:center; /*alinhando os blocos na vertical */
+}
+
+.imagemCardCardapio{
+    width: 100%;
+    height: 150px;
+}
+
+#zoom{ /* animação dentro da div BANNER - ZOOM NA IMAGEM - não usaremos agora*/
+    transition: transform 0.3s ease; /* suaviza o efeito */
+}
+
+#zoom:hover{
+    transform: scale(1.05); /* aumenta 5% */
+}
+
+/* QUEM SOMOS */
+
+.boxImagemMaior{
+    width: 45%;
+    height: 400px;
+    padding: 0.5%;
+    text-align: center;
+    border-radius:10px; /*arredondado*/
+    border-style: groove; /*estilo da borda */
+    border-color: #343538; /*cor da borda*/
+    background-color: #343538;   
+}
+
+.imagemFachada{
+    width: 100%;
+    height: 400px;
+}
+
+.boxImagemMenor{
+    display: flex;
+    flex-direction:row; 
+    flex-wrap: wrap; 
+    justify-content:center; /*alinhamento na horizontal*/
+    align-items:center; /*alinhando os blocos na vertical */
+    width: 50%;
+    height: 400px;
+    
+}
+
+.cardImagemMenor{
+    width: 25%;
+    height: auto;
+    background-color: #343538;
+    color: #343538;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+    border-style: groove; /* estilo da borda */
+    border-color: #343538; /* cor da borda */
+    display: flex;
+    flex-direction:row; 
+    flex-wrap: wrap; 
+    justify-content:center; /*alinhamento na horizontal*/
+    align-items:center; /*alinhando os blocos na vertical */ 
+}
+
+.imagemDentro{
+    width: 100%;
+    height: 100%;
+}
+
+/* FORMULÁRIO */
+
+input{
+    background-color: #343538;
+    font-family: Century Gothic, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.1em;
+    color: #959697;  
+    border-radius: 10px;
+    border-color: white;
+    width: 100%;
+}
+
+label{
+    font-family: Century Gothic, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    size: 1.2em;
+}
+
+#conteudo_formulario{
+    width: 60%;
+    background-color: #959697;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction:row; 
+    flex-wrap: wrap; 
+    justify-content:center; /*alinhamento na horizontal*/
+    align-items:center; /*alinhando os blocos na vertical */
+}
+
+.botoes{
+    /* classe do botão */
+    color: rgb(207, 31, 31);
+    padding: 1%;
+    font-family: Century Gothic, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#botoes{
+    /* aqui é a div que está o botao */
+    text-align: center;
+    padding: 1%;
+}
+
+#usuario{
+    size: 1.4em;
+    color: black;
+    font-family: Century Gothic, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.boxImagemContato{
+    width: 45%;
+    height: auto;
+    padding: 0.5%;
+    text-align: center;
+    border-radius:10px; /*arredondado*/
+    border-style: groove; /*estilo da borda */
+    border-color: #343538; /*cor da borda*/
+    background-color: #343538;   
+}
+
+.tamanhoImagemContato{
+    width: 100%;
+    height: 100%;
+}
+
+.boxFormulario{
+    display: flex;
+    flex-direction:row; 
+    flex-wrap: wrap; 
+    justify-content:center; /*alinhamento na horizontal*/
+    align-items:center; /*alinhando os blocos na vertical */
+    width: 50%;
+    height: auto;   
+}
+
+/* BREAKPOINTS - TAMANHO DA TELA EM DIFERENTES DISPOSITIVOS */
+
+@media screen and (min-width : 376px) {
+    .boxCard{
+    /* posso alterar qualquer propriedade aqui - fonte, tamanho, fundo... */
+    width: 50%;
+    height: auto;
+    margin: 2%;
+    font-size: 0.9em;
+    line-height: 1.0em;
+    }
+    .boxBannerEstatico{
+    height: 100px;
+    }
+    .boxCardCardapio{
+    width: 50%;
+    height: 200px;
+    }
+    .boxImagemMaior{
+    width: 90%;
+    height: 400px;
+    }
+    .boxImagemMenor{
+    width: 90%;
+    height: auto;
+    }
+    .boxImagemContato{
+    width: 80%;
+    height: auto;
+    }
+    .boxFormulario{
+    width: 50%;
+    height: auto;
+    }
+    nav ul li{
+	margin-right: 0.5px;
+    font-size: 0.7em;
+    }
+    .boxRedesSociais{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width : 576px) {
+    .boxCard{
+    width: 50%;
+    height: auto;
+    margin: 1%;
+    font-size: 0.9em;
+    line-height: 1.0em;
+    }
+    .boxBannerEstatico{
+    height: 150px;
+    }
+    .boxCardCardapio{
+    width: 40%;
+    height: 200px;
+    }
+    .boxImagemMaior{
+    width: 90%;
+    height: 400px;
+    }
+    .boxImagemMenor{
+    width: 90%;
+    height: auto;
+    }
+    .boxImagemContato{
+    width: 60%;
+    height: auto;
+    }
+    .boxFormulario{
+    width: 60%;
+    height: auto;
+    }
+    nav ul li{
+	margin-right:1px;
+    font-size: 0.8em;
+    }
+    .boxRedesSociais{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width : 768px) {
+    .boxCard{
+    width: 20%;
+    margin-right: 5%;
+    padding: 1%;
+    font-size: 1.0em;
+    line-height: 1.1em;
+    }
+    .boxBannerEstatico{
+    height: 150px;
+    }
+    .boxCardCardapio{
+    width: 30%;
+    height: 200px;
+    }
+    .boxImagemMaior{
+    width: 65%;
+    height: 400px;
+    }
+    .boxImagemMenor{
+    width: 70%;
+    height: auto;
+    }
+     .boxImagemContato{
+    width: 55%;
+    height: auto;
+    }
+    .boxFormulario{
+    width: 50%;
+    height: auto;
+    }
+    nav ul li{
+	margin-right: 5px;
+    font-size: 0.9em;
+    }
+    .boxRedesSociais{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width : 992px) {
+    .boxCard{
+    width: 20%;
+    margin-right: 1%;
+    padding: 1%;
+    }
+    .boxBannerEstatico{
+    height: 200px;
+    }
+    .boxCardCardapio{
+    width: 20%;
+    height: 200px;
+    }
+    .boxImagemMaior{
+    width: 45%;
+    height: 400px;
+    }
+    .boxImagemMenor{
+    width: 50%;
+    height: auto;
+    }
+     .boxImagemContato{
+    width: 35%;
+    height: auto;
+    }
+    .boxFormulario{
+    width: 50%;
+    height: auto;
+    }
+    nav ul li{
+	margin-right:10px;
+    font-size: 1em;
+    }
+    .boxRedesSociais{
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width : 1200px) {
+    .boxCard{
+    width: 25%;
+    margin-right: 1%;
+    padding: 1%;
+    }
+    .boxBannerEstatico{
+    height: 300px;
+    }
+    .boxCardCardapio{
+    width: 20%;
+    height: 200px;
+    }
+    .boxImagemMaior{
+    width: 45%;
+    height: 400px;
+    }
+    .boxImagemMenor{
+    width: 50%;
+    height: auto;
+    }
+    .boxImagemContato{
+    width: 35%;
+    height: auto;
+    }
+    .boxFormulario{
+    width: 50%;
+    height: auto;
+    }
+    nav ul li{
+	margin-right:10px;
+    font-size: 1em;
+    }
+    .boxRedesSociais{
+        font-size: 1em;
+    }
+}
