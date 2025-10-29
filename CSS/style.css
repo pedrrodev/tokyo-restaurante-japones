@@ -78,7 +78,7 @@
     background-color: #959697;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+    text-align: right;
 }
 
 .boxRodaPe{
@@ -222,12 +222,14 @@ nav ul li a:hover {
     border-radius:10px; /*arredondado*/
     border-style: groove; /*estilo da borda */
     border-color: #343538; /*cor da borda*/
-    background-color: #343538;   
+    background-color: #343538;
+	margin-top: 1%;
 }
 
 .imagemFachada{
     width: 100%;
     height: 400px;
+	margin-top: auto;
 }
 
 .boxImagemMenor{
@@ -321,7 +323,9 @@ label{
     border-radius:10px; /*arredondado*/
     border-style: groove; /*estilo da borda */
     border-color: #343538; /*cor da borda*/
-    background-color: #343538;   
+    background-color: #343538;
+	margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .tamanhoImagemContato{
@@ -536,4 +540,5 @@ label{
     .boxRedesSociais{
         font-size: 1em;
     }
+
 }
