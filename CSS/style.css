@@ -167,12 +167,12 @@ nav ul li a{
 nav ul li a:hover {
 	background-color: #959697; /*cor quando passar o mouse*/
 	transition: all .5s; 
-	border-radius:10px; /*arredondado*/
+	border-radius: 0 20px 0 20px; /*arredondado*/
 }
 
 .botaoColorido{ /* quando eu estiver na página o botão ficará colorido */
     background-color: #959697;
-    border-radius: 10px;
+    border-radius: 0 20px 0 20px;
     color: brown;
 }
 
@@ -384,6 +384,12 @@ label{
     .boxRedesSociais{
         font-size: 0.8em;
     }
+	.boxLogo{
+        width: 100%;
+    }
+    .boxMenu{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width : 576px) {
@@ -423,6 +429,12 @@ label{
     }
     .boxRedesSociais{
         font-size: 0.8em;
+    }
+	.boxLogo{
+        width: 100%;
+    }
+    .boxMenu{
+        width: 100%;
     }
 }
 
@@ -464,6 +476,12 @@ label{
     .boxRedesSociais{
         font-size: 0.9em;
     }
+	.boxLogo{
+        width: 10%;
+    }
+    .boxMenu{
+        width: 90%;
+    }
 }
 
 @media screen and (min-width : 992px) {
@@ -501,6 +519,12 @@ label{
     }
     .boxRedesSociais{
         font-size: 1em;
+    }
+	.boxLogo{
+        width: 10%;
+    }
+    .boxMenu{
+        width: 90%;
     }
 }
 
@@ -540,5 +564,12 @@ label{
     .boxRedesSociais{
         font-size: 1em;
     }
+	.boxLogo{
+        width: 10%;
+    }
+    .boxMenu{
+        width: 90%;
+    }
 
 }
+
